@@ -7,7 +7,7 @@
   </head>
   <body>
     
-   <div id="Intro">
+   <section id="Intro">
      <p> Los Pokémon es una especie mas de animal que existe en el universo. 
        Pueden habitar en la tierra, otros mundos u otras dimensiones.
        Igual que en el mundo real tenemos las clasificaciones taxonómicas para
@@ -16,14 +16,36 @@
        Esto suele traducirse en separarlos en función de <a>fortzalezas</a> y <a>debilidades</a>.
        En esta aplicación encontrarás información relevante para comenzar a aventurarte en el mundo Pokemón!!
       </p>
-   </div>
+   </section>
    <form class="searchform cf">
-      <input type="text" placeholder="Pokemón...">
-      <button type="submit">Buscar</button>
+      <input type="text" id="inputNamePokemon" value = "" placeholder="Pokemón...">
+      <button type="button" id="searchName" > Buscar </button>
     </form>
-    <button type="submit">Catalogo</button>
-    <button type="submit">Filtrar</button>
+    <button type="submit" id="catalog" >Catálogo</button>
+    <button type="submit" id = "filterhByTypeGrass" > Grass</button>
+    <button type="submit" id = "filterhByTypePoison" >Poison</button>
+    <button type="submit" id = "filterhByTypeFire" >Fire</button>
+    <button type="submit" id = "filterhByTypeFlying" >Flying</button>
+    <button type="submit" id = "filterhByTypeWater" >Water</button>
+    <button type="submit" id = "filterhByTypeBug" >Bug</button>
+    <button type="submit" id = "filterhByTypeNormal" >Normal</button>
+    <button type="submit" id = "filterhByTypeElectic" >Electric</button>
+    <button type="submit" id = "filterhByTypeGround" >Ground</button>
+    <button type="submit" id = "filterhByTypeFighting" >Fighting</button>
+    <button type="submit" id = "filterhByTypePsychic" >Psychic</button>
+    <button type="submit" id = "filterhByTypeRock" >Rock</button>
+    <button type="submit" id = "filterhByTypeIce" >Ice</button>
+    <button type="submit" id = "filterhByTypeGhost" >Ghost</button>
+    <button type="submit" id = "filterhByTypeDragon" >Dragon</button>
+
     <button type="submit">Ayuda</button>
+
+
+    <section id = "searchResult">Resultado de busqueda por nombre </section>
+    <img id="imgImput" src=" ">
+
+    <section id = "resultByTypeGrass"> Los pokemones de tipo  son :</section>
+
     <svg id="iconHelp" class="icon icon-help" xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
     viewBox="0 0 24 24"> <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
     </svg>
@@ -31,12 +53,8 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <p>Made by Lucy & Rocio de Laboratoria</p>
 
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
+    <section id="root"></section>
+    <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
