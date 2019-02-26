@@ -6,30 +6,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
-      <header> 
-          <div class="contenedor"> 
-
-            <h1>pokemon beg</h1><h3>girl</h3><h2>ners</h2>
-              <input type="checkbox" id="menu-bar">
-              <label class="icon- icon-th-list" for="menu-bar"></label>
+    <header> 
+      <div class="contenedor"> 
+        <h1>pokemon beg</h1><h3>girl</h3><h2>ners</h2>
+          <input type="checkbox" id="menu-bar">
+            <label class="icon- icon-th-list" for="menu-bar"></label>
               <nav class="menu">
-                  <a href="">¿Que es un pokemon?</a>
+                  <a href="indexQuesEs.html" target="_blank" >¿Que es un pokemon?</a>
                   <a href="">¿Como usar Pokemon Begginers?</a>
                   <a href="https://pokemongolive.com/es/">Conoce mas...</a>
               </nav>
+              <form class="searchform cf">
+                <input type="text" id="inputNamePokemon" value ="" placeholder="Name Pokemón...">
+                <button type="button" id ="searchName">Search</button>
+              </form>
+              
           </div>
-      </header>
+    </header>
     
-      <form class="searchform cf">
-          <input type="text" placeholder="Name or ID Pokemón...">
-          <button type="submit">Search</button>
-        </form>
-        
-      <main>
-        <section id="categories">
-          <div class="contenedor">
-                  <button type="submit" id = "filterhByTypeGrass" ><img src="images/bullbasaur.png" alt="GrassCategory"><p id:>Grass</p></button>
+    <main>
+      <section id="categories">
+        <div class="contenedor">
+              <button type="submit" id = "filterhByTypeGrass" ><img src="images/bullbasaur.png" alt="GrassCategory"><p id:>Grass</p></button>
               <button type="submit" id = "filterhByTypePoison" ><img src="images/venonat.png" alt="PoisonCategory"><p id:>Poison</p></button>
               <button type="submit" id = "filterhByTypeFire" ><img src="images/charmander.png" alt="FireCategory"><p id:>Fire</p></button>
               <button type="submit" id = "filterhByTypeFlying" ><img src="images/pidgey.png" alt="FliyingCategory"><p id:>Flying</p></button>
@@ -44,32 +42,28 @@
               <button type="submit" id = "filterhByTypeIce" ><img src="images/mew.png" alt="IceCategory"><p id:>Ice</p></button>
               <button type="submit" id = "filterhByTypeGhost" ><img src="images/zubat.png" alt="GhostCategory"><p id:>Ghost</p></button>
               <button type="submit" id = "filterhByTypeDragon" ><img src="images/dratini.png" alt="DragonCategory"><p id:>Dragon</p></button>
-        </section>
-      </div>
-      </main>
+        </div>
+      </section>
+    </main>
 
-    
+    <section id = "resultByTypeGrass">
+      <div class="contenedor">
+        <h2>  Los pokemones de tipo  son : </h2>
+      </div> 
+    </section>
 
-    
-   <section id="Intro">
-     <p> Los Pokémon es una especie mas de animal que existe en el universo. 
-       Pueden habitar en la tierra, otros mundos u otras dimensiones.
-       Igual que en el mundo real tenemos las clasificaciones taxonómicas para
-       identificar especies y familias animales, dentro del universo pokémon es 
-       posible clasificar a los pokémon según su <a id="type">tipo.</a> 
-       Esto suele traducirse en separarlos en función de <a>fortzalezas</a> y <a>debilidades</a>.
-       En esta aplicación encontrarás información relevante para comenzar a aventurarte en el mundo Pokemón!!
-      </p>
-   </div>
-   
-    <button type="submit" onclick="filtrar()" >Filtrar</button>
-   
+    <section id = "searchResult">
+      <div class="contenedor">
+        <h2> Resultado de busqueda por nombre </h2>
+      </div> 
+    </section>
+    <img id="imgImput" src=" ">
     
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <p>Made by Lucy & Rocio de Laboratoria</p>
 
-    <section id="root"></section>
+    
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

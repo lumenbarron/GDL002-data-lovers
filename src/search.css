@@ -12,9 +12,10 @@
       content:"";
       display:table;
   }
-  .cf:after {
+  
+  /*.cf:after {
       clear:both;
-  }
+  }*/
     
   /*--------------------------------------------------------------
   2.0 - SEARCH FORM
