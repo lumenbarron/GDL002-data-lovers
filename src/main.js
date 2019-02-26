@@ -47,4 +47,5 @@ document.getElementById("filterhByTypeRock").addEventListener("click", function 
 document.getElementById("filterhByTypeIce").addEventListener("click", function () { typeGrass ("Ice"); });
 document.getElementById("filterhByTypeGhost").addEventListener("click", function () { typeGrass ("Ghost"); });
 document.getElementById("filterhByTypeDragon").addEventListener("click", function () { typeGrass ("Dragon"); });
+document.getElementById("filterhByTypeElectic").addEventListener("click", function () { typeGrass ("Electric"); });
  
