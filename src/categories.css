@@ -1,0 +1,21 @@
+#categories .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#categories img {
+    width: 190px;
+    height:190px;
+    margin:7px;
+}
+
+#categories button {
+    background: none;
+    border: none;
+}
+#categories p {
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
