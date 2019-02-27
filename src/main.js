@@ -9,43 +9,40 @@ const searchResult = () =>{
 document.getElementById("searchName").addEventListener("click", searchResult);
   
 
-const borrar =() => {
-    document.getElementById("resultByTypeGrass").value="";
+const typePokemonPrint = (nameTypeClass) => {
+    console.log("pokemon filtrado");
+    
+    let resultTypePokemonPrint = typePokemon( nameTypeClass );
+    resultTypePokemonPrint.map(element => { element
+        const markup = `
+            <div class="type">
+            <h2> ${element.name} </h2>
+            <p>
+            <img class="bio" src="${element.img}">
+            </p>
+            </div>
+            `;
+            document.getElementById("resultByType").innerHTML += markup;
+            console.log (resultTypePokemonPrint);
+            //return resultTypePokemonPrint;
+        
+    })
+    orderPokemonAlfb ( resultTypePokemonPrint );
 };
 
-document.getElementById("filterhByTypeGrass").addEventListener("click", borrar );
-
-const typeGrass = (nameTypeClass) => {
-    console.log(nameTypeClass);
-    let resultTypeGrass = typePokemonGrass( nameTypeClass );
-    for (let i = 0; i < resultTypeGrass.length; i++) {
-      const element = resultTypeGrass[i];
-      console.log(element);
-      const markup = `
-        <div class="type">
-        <h2> ${element.name} </h2>
-        <p>
-        <img class="bio" src="${element.img}">
-        </p>
-         </div>
-        `;
-         document.getElementById("resultByTypeGrass").innerHTML+=markup;
-    }
-}
-
-document.getElementById("filterhByTypeGrass").addEventListener("click", function () { typeGrass ("Grass"); });
-document.getElementById("filterhByTypeWater").addEventListener("click", function () { typeGrass ("Water"); });
-document.getElementById("filterhByTypePoison").addEventListener("click", function () { typeGrass ("Poison"); });
-document.getElementById("filterhByTypeFire").addEventListener("click", function () { typeGrass ("Fire"); });
-document.getElementById("filterhByTypeFlying").addEventListener("click", function () { typeGrass ("Flying"); });
-document.getElementById("filterhByTypeBug").addEventListener("click", function () { typeGrass ("Bug"); });
-document.getElementById("filterhByTypeNormal").addEventListener("click", function () { typeGrass ("Normal"); });
-document.getElementById("filterhByTypeGround").addEventListener("click", function () { typeGrass ("Ground"); });
-document.getElementById("filterhByTypeFighting").addEventListener("click", function () { typeGrass ("Fighting"); });
-document.getElementById("filterhByTypePsychic").addEventListener("click", function () { typeGrass ("Psychic"); });
-document.getElementById("filterhByTypeRock").addEventListener("click", function () { typeGrass ("Rock"); });
-document.getElementById("filterhByTypeIce").addEventListener("click", function () { typeGrass ("Ice"); });
-document.getElementById("filterhByTypeGhost").addEventListener("click", function () { typeGrass ("Ghost"); });
-document.getElementById("filterhByTypeDragon").addEventListener("click", function () { typeGrass ("Dragon"); });
-document.getElementById("filterhByTypeElectic").addEventListener("click", function () { typeGrass ("Electric"); });
+document.getElementById("filterhByTypeGrass").addEventListener("click", function () { typePokemonPrint ("Grass"); });
+document.getElementById("filterhByTypeWater").addEventListener("click", function () { typePokemonPrint ("Water"); });
+document.getElementById("filterhByTypePoison").addEventListener("click", function () { typePokemonPrint ("Poison"); });
+document.getElementById("filterhByTypeFire").addEventListener("click", function () { typePokemonPrint ("Fire"); });
+document.getElementById("filterhByTypeFlying").addEventListener("click", function () { typePokemonPrint ("Flying"); });
+document.getElementById("filterhByTypeBug").addEventListener("click", function () { typePokemonPrint ("Bug"); });
+document.getElementById("filterhByTypeNormal").addEventListener("click", function () { typePokemonPrint("Normal"); });
+document.getElementById("filterhByTypeGround").addEventListener("click", function () { typePokemonPrint ("Ground"); });
+document.getElementById("filterhByTypeFighting").addEventListener("click", function () { typePokemonPrint ("Fighting"); });
+document.getElementById("filterhByTypePsychic").addEventListener("click", function () { typePokemonPrint ("Psychic"); });
+document.getElementById("filterhByTypeRock").addEventListener("click", function () { typePokemonPrint ("Rock"); });
+document.getElementById("filterhByTypeIce").addEventListener("click", function () { typePokemonPrint ("Ice"); });
+document.getElementById("filterhByTypeGhost").addEventListener("click", function () { typePokemonPrint ("Ghost"); });
+document.getElementById("filterhByTypeDragon").addEventListener("click", function () { typePokemonPrint ("Dragon"); });
+document.getElementById("filterhByTypeElectic").addEventListener("click", function () { typePokemonPrint ("Electric"); });
  
