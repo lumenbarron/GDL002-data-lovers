@@ -1,20 +1,29 @@
 require('../src/data.js');
-const pokemon = require ("../src/data/pokemon/pokemon.json");
+const POKEMON = require("../src/data/pokemon/pokemon.json");
+
 
 describe ("POKEMON", () => {
   it("should be an object", () => {
-    expect (typeof pokemon).toBe("object");
+    //console.log(pokemon);
+    expect(typeof POKEMON).toBe("object");
   });
 });
 
 
-
-/*describe('example', () => {
+describe('searchNamePokemon', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof(dataLovers.searchNamePokemon)).toBe('function');
   });
+});
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+
+describe ("averagePokemonCandy", () => {
+  it( "it should return a number", () => {
+    expect (dataLovers.averagePokemonCandy()).toBe (57.3);
   });
-}); */
+});
+
+ /* it('returns a object', () => {
+    expect(dataLovers.searchNamePokemon("Pikachu")).toBe("object");
+  });*/
+
