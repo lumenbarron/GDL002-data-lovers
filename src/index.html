@@ -20,13 +20,13 @@
                 <input type="text" id="inputNamePokemon" value ="" placeholder="Name Pokemón...">
                 <button type="button" id ="searchName">Search</button>
               </form>
-              
+              <button type="button" id ="average" >Dato Curioso</button>
           </div>
     </header>
     
     <main>
-      <section id="categories">
-        <div class="contenedor">
+      <section id="categories" >
+        <div class="contenedor" id="inicio">
               <button type="submit" id = "filterhByTypeGrass" ><img src="images/bullbasaur.png" alt="GrassCategory"><p id:>Grass</p></button>
               <button type="submit" id = "filterhByTypePoison" ><img src="images/venonat.png" alt="PoisonCategory"><p id:>Poison</p></button>
               <button type="submit" id = "filterhByTypeFire" ><img src="images/charmander.png" alt="FireCategory"><p id:>Fire</p></button>
@@ -46,21 +46,38 @@
       </section>
     </main>
 
-    <section id = "resultByTypeGrass">
+    <section id = "resultByType" >
       <div class="contenedor">
         <h2>  Los pokemones de tipo  son : </h2>
+        <button type="button" id = "back"> Back </button>
       </div> 
     </section>
 
-    <section id = "searchResult">
+
+     <section id = "resultByTypeSort" >
+      <div class="contenedor">
+        <h2>  Los pokemones de tipo  son : </h2>
+        <button type="button" id = "orderPokemon"> Ordenar </button>
+      </div> 
+    </section>
+
+    
+    
+    <section id = "searchResult"  >
       <div class="contenedor">
         <h2> Resultado de busqueda por nombre </h2>
       </div> 
     </section>
     <img id="imgImput" src=" ">
+   
+   
+      <div class="contenedor">
+        <h2> ¿Sabias que... </h2>
+        <p id ="averageresult" ></p>
+      </div> 
     
 <footer>
-  <div class="contenedor">
+    <div class="contenedor">
     <p>Made by Lucy & Rocio de Laboratoria</p>
   </div>
 </footer>
