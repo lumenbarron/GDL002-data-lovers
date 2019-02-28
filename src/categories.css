@@ -1,4 +1,5 @@
 #categories .contenedor {
+    margin-top: 110px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
