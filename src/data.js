@@ -1,38 +1,42 @@
 
 // Searching for the name of Pokemon
-const searchNamePokemon = (nameInput)=> {
+const searchNamePokemon = (nameInput, data)=> {
   let namePokemon = "";
-    POKEMON.pokemon.find( obj => { 
-      if (obj.name.toLowerCase() === nameInput){
+    data.find( obj => { 
+      if (obj.name.toLowerCase() === nameInput.toLowerCase()){
      namePokemon = (obj); 
     }
-  }); 
+  });
+  //console.log (namePokemon);
   return namePokemon;
   };
 
 
 // Searching for the type of Pokemon
-const typePokemonName = ( nameType ) => {
-  let typePokemon = POKEMON.pokemon
+const typePokemonName = ( nameType, data ) => {
+  let typePokemon = data
     .filter( obj => obj.type[0] === nameType || obj.type[1] === nameType );//obtemos un array mas pequeño con objetos
+    //console.log(typePokemon);
+    //console.log(JSON.stringify(typePokemon));
     return typePokemon;
 };
 
 //sortID = "a-z"
 const orderPokemonAlfb = ( pokemonSorter) => {
-  let sorter = pokemonSorter.sort(function(a,b){
+  let sorter = pokemonSorter.sort((a,b) => {
     if (a.name > b.name ){
         return 1;
      } if (a.name < b.name ) {
         return -1;
     } 
   });
+    //console.log(JSON.stringify(sorter));
     return sorter;
 };
 
 //Function to know the average of candy count of all of pokemon (data)
-const averagePokemonCandy = () => {
-  let allPokemon = POKEMON.pokemon
+const averagePokemonCandy = (data) => {
+  let allPokemon = data
   .filter(obj => obj.candy_count)
   .map( obj => obj.candy_count);
   let reducePokemon = allPokemon.reduce ((accumulator, currentValue) => accumulator + currentValue);

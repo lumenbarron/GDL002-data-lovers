@@ -19,7 +19,7 @@ document.getElementById("back").addEventListener("click", pagInicio);
 
 const searchResult = () =>{
     let nameInput = document.getElementById("inputNamePokemon").value.toLowerCase(); 
-    let pokemonImput = dataLovers.searchNamePokemon(nameInput);
+    let pokemonImput = dataLovers.searchNamePokemon(nameInput, POKEMON.pokemon);
     document.getElementById("searchResult").innerHTML = "Hola! Mi nombre es " + pokemonImput.name + ",soy un pokemon tipo " + pokemonImput.type 
     + " mi principal debilidad son pokemones de tipo " + pokemonImput.weaknesses ;
     document.getElementById("imgImput").src = pokemonImput.img;
@@ -29,7 +29,7 @@ document.getElementById("searchName").addEventListener("click", searchResult);
   
 let resultTypePokemonPrint;
 const typePokemonPrint = (nameTypeClass) => {
-   resultTypePokemonPrint = dataLovers.typePokemonName( nameTypeClass );
+   resultTypePokemonPrint = dataLovers.typePokemonName( nameTypeClass ,POKEMON.pokemon);
     resultTypePokemonPrint.map(element => { element;
         const markup = `
             <div class="type">
@@ -45,7 +45,6 @@ const typePokemonPrint = (nameTypeClass) => {
 };
 
 const sortPokemonPrint = () => {
-    console.log("imprimir pokemon ordenados");
     let resultSortPokemonPrint = dataLovers.orderPokemonAlfb(resultTypePokemonPrint );
     resultSortPokemonPrint.map(element => { element;
         const markup = `
@@ -58,13 +57,13 @@ const sortPokemonPrint = () => {
             `;
             document.getElementById("resultByType").innerHTML += markup;
     });
-    dataLovers.orderPokemonAlfb (resultSortPokemonPrint);
+    //dataLovers.orderPokemonAlfb (resultSortPokemonPrint);
 };
 
 document.getElementById("orderPokemon").addEventListener("click", sortPokemonPrint);
 
 const printAverage = () => {
-    let result = dataLovers.averagePokemonCandy();
+    let result = dataLovers.averagePokemonCandy(POKEMON.pokemon);
     document.getElementById("averageresult").innerHTML = "...Los pokemon necesitan candys para evolucionar?, el promedio de estos es  " + result;
 };
 document.getElementById("average").addEventListener("click",printAverage);
