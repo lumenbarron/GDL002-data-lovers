@@ -7,7 +7,6 @@ const searchNamePokemon = (nameInput, data)=> {
      namePokemon = (obj); 
     }
   });
-  //console.log (namePokemon);
   return namePokemon;
   };
 
@@ -15,8 +14,7 @@ const searchNamePokemon = (nameInput, data)=> {
 // Searching for the type of Pokemon
 const typePokemonName = ( nameType, data ) => {
   let typePokemon = data
-    .filter( obj => obj.type[0] === nameType || obj.type[1] === nameType );//obtemos un array mas pequeño con objetos
-    //console.log(typePokemon);
+    .filter( obj => obj.type[0] === nameType || obj.type[1] === nameType );
     //console.log(JSON.stringify(typePokemon));
     return typePokemon;
 };
@@ -30,7 +28,6 @@ const orderPokemonAlfb = ( pokemonSorter) => {
         return -1;
     } 
   });
-    //console.log(JSON.stringify(sorter));
     return sorter;
 };
 

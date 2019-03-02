@@ -1,5 +1,5 @@
 #categories .contenedor {
-    margin-top: 110px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 #categories button:hover {
-
+    background: rgba(0,0,0,.3) ;
 }
 #categories p {
     color:black;

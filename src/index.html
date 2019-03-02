@@ -7,14 +7,15 @@
   </head>
   <body>
     <header> 
-      <div class="contenedor"> 
-        <h1>pokemon beg</h1><h3>girl</h3><h2>ners</h2>
+      <div class="contenedor">
           <input type="checkbox" id="menu-bar">
-            <label class="icon- icon-th-list" for="menu-bar"></label>
-              <nav class="menu">
-                  <a href="indexQuesEs.html" target="_blank" >¿Que es un pokemon?</a>
-                  <a href="">¿Como usar Pokemon Begginers?</a>
-                  <a href="https://pokemongolive.com/es/">Conoce mas...</a>
+            <label for="menu-bar"> <img src="images/smartphone.png" alt="smartphone" id="smartphone"></label>
+              <nav class="menu" >
+                <ul>
+                  <li><a href="indexQuesEs.html" target="_blank" >¿Que es un pokemon?</a></li>
+                  <li><a href="">¿Como usar Pokemon Begginers?</a></li>
+                  <li><a href="https://pokemongolive.com/es/">Conoce mas...</a></li>
+                </ul>
               </nav>
               <form class="searchform cf">
                 <input type="text" id="inputNamePokemon" value ="" placeholder="Name Pokemón...">
@@ -23,10 +24,13 @@
               <button type="button" id ="average" >Dato Curioso</button>
           </div>
     </header>
+    <section>
+      
+    </section>
     
     <main>
       <section id="categories" >
-        <div class="contenedor" id="inicio">
+        <div class="contenedor" id="inicio" >
               <button type="submit" id = "filterhByTypeGrass" ><img src="images/bullbasaur.png" alt="GrassCategory"><p id:>Grass</p></button>
               <button type="submit" id = "filterhByTypePoison" ><img src="images/venonat.png" alt="PoisonCategory"><p id:>Poison</p></button>
               <button type="submit" id = "filterhByTypeFire" ><img src="images/charmander.png" alt="FireCategory"><p id:>Fire</p></button>
@@ -46,35 +50,35 @@
       </section>
     </main>
 
-    <section id = "resultByType" >
-      <div class="contenedor">
+    <section >
         <h2>  Los pokemones de tipo  son : </h2>
-        <button type="button" id = "back"> Back </button>
+      <div class="contenedor" id = "resultByType" >
       </div> 
+      <button type="button" id = "back" class="searchform"> Back </button>
     </section>
 
 
-     <section id = "resultByTypeSort" >-
-      <div class="contenedor">
-        <h2>  Los pokemones de tipo  son : </h2>
+     <section>
+      <div class="contenedor" id = "resultByTypeSort">
+        <h2>  Los pokemones de tipo son : </h2>
         <button type="button" id = "orderPokemon"> Ordenar </button>
       </div> 
     </section>
 
-    
-    
-    <section id = "searchResult"  >
-      <div class="contenedor">
+    <section >
+      <div class="contenedor" id = "searchPokemon" >
         <h2> Resultado de busqueda por nombre </h2>
+        <p id = "searchResult"> </p>
       </div> 
     </section>
     <img id="imgImput" src=" ">
-   
-   
-      <div class="contenedor">
+    
+    <section >
+      <div class="contenedor"">
         <h2> ¿Sabias que... </h2>
         <p id ="averageresult" ></p>
       </div> 
+    </section >
     
 <footer>
     <div class="contenedor">
