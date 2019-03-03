@@ -1,25 +1,26 @@
 #menu-bar {
-    
     display: none;
 }
 
-
 header label {
     display: none;
-    width: 30 px;
-    height: 30 px;
-    padding: 10 px;
-    /* float: right; */
+    /* width: 30 px;
+    height: 30 px; */
+    /* padding: 10 px; */
     font-size: 28px;
     margin: 6px 0;
     cursor: pointer;
+    position: absolute;
+    left: 10px;
+    top: 180px;
 }
 .menu ul {
     margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
-    /* justify-content: flex-end; */
+    left: 549px;
+        top: 304px;
 }
 .menu li:hover {
     background: rgba(0,0,0,0.3);
@@ -32,34 +33,14 @@ header label {
     text-decoration: none;
 }
 
-/* 
-.menu {
-    margin-top: 100px;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100vh;
-   background: rgba(51,51,51,0.9);
-   transition: all 0.5s;
-   transform: translateX(100%);
+#average {
+    position: absolute;
+    right: 19px;
+    top: 160px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
-
-
-.menu a {
-    display: block;
-    color: #fff;
-    height: 50px;
-    text-decoration: none;
-    padding: 15px;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-}
-.menu a:hover {
-    background: rgba(255,255,255,0.3);
-}
-#menu-bar:checked ~ .menu {
-    transform: translateX(0%)
-} */
 
 @media (max-width:768px) {
     header label {
@@ -67,7 +48,11 @@ header label {
     }
     .menu {
         position: absolute;
-        background: turquoise;
+        left: 19px;
+        top: 250px;
+        /* background: rgba(52,173,236); */
+        background: linear-gradient(to bottom, white, #00BFFF);
+        color: tomato;
         width: 50%;
         margin-left:-70%;
         transition: all 0.5s;
@@ -80,7 +65,5 @@ header label {
     }
     #menu-bar:checked ~ .menu {
         margin: 0;
-
-
     }
 }

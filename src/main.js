@@ -57,29 +57,27 @@ document.getElementById("average").addEventListener("click",printAverage);
 
 //----------Elements for the HTML---------------------//
 
- /*const pagInicio =() => {
+const pagInicio =() => {
     document.getElementById("inicio").style.display = "block";
     document.getElementById("resultByType").style.display = "none";
     document.getElementById("resultByTypeSort").style.display = "none";
-    document.getElementById("searchResult").style.display = "none";
+    document.getElementById("searchPokemon").style.display = "none";
+    document.getElementById("resultAverage").style.display = "none";
     };
 
 document.getElementById("back").addEventListener("click", pagInicio);
 
+ 
+// const pagType =() => {
+//     document.getElementById("inicio").style.display = "none";
+//     document.getElementById("resultByType").style.display = "block";
+//     document.getElementById("resultByTypeSort").style.display = "none";
+//     document.getElementById("searchResult").style.display = "none";
+//     };
 
-const pagType =() => {
-    document.getElementById("inicio").style.display = "none";
-    document.getElementById("resultByType").style.display = "block";
-    document.getElementById("resultByTypeSort").style.display = "none";
-    document.getElementById("searchResult").style.display = "none";
-    };
-
-*/
-
+// document.getElementById("filterhByTypeGrass").addEventListener("click",pagType );
 
 document.getElementById("filterhByTypeGrass").addEventListener("click", function () { typePokemonPrint ("Grass"); });
-//document.getElementById("filterhByTypeGrass").addEventListener("click",pagType );
-//document.getElementById("back").addEventListener("click", pagInicio);
 document.getElementById("filterhByTypeWater").addEventListener("click", function () { typePokemonPrint ("Water"); });
 document.getElementById("filterhByTypePoison").addEventListener("click", function () { typePokemonPrint ("Poison"); });
 document.getElementById("filterhByTypeFire").addEventListener("click", function () { typePokemonPrint ("Fire"); });

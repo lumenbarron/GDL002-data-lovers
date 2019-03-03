@@ -72,3 +72,18 @@ section {
     text-align: center;
 }
 
+#resultByTypeSort {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#resultByTypeSort img{
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
