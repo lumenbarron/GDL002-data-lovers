@@ -22,15 +22,17 @@ header label {
     left: 549px;
         top: 304px;
 }
-.menu li:hover {
-    background: rgba(0,0,0,0.3);
-}
+
 .menu li a {
     display: block;
     padding: 20px 30px;
 
-    color: #fff;
+    color: rgb(136, 136, 136);
     text-decoration: none;
+}
+
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
 }
 
 #average {
