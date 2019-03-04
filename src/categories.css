@@ -1,4 +1,5 @@
 #categories .contenedor {
+    margin-top: 250px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -13,10 +14,14 @@
 #categories button {
     background: none;
     border: none;
+    cursor: pointer;
+}
+#categories button:hover {
+    background: rgba(0,0,0,.3) ;
 }
 #categories p {
     color:black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Rokkitt', Courier, monospace;
     font-size: medium;
 }
 #resultByTypeGrass .contenedor {

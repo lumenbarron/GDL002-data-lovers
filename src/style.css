@@ -18,31 +18,29 @@ body{
 }
 header {
     width: 100%;
-    height: 100px;
-    background-image: url(images/banner.jpg);
+    height: 160px;
+    background-image: url(images/banner3.jpg);
     color: #fff;
-
-    position: fixed;
+    position: absolute;
     top: 0%;
     left: 0;
+    align-content: center;
     z-index: 100;
 }
 .contenedor {
 width: 90%;
 margin: auto;
 }
-h1 {
-    float: left;
-    color: yellow;
-}
+
 h2 {
     float: left;
     color: palevioletred;
 }
-h1 {
+h3 {
     float: left;
-    color: yellow;
+    color:turquoise;
 }
+
 header .contenedor {
     display: table;
 
@@ -50,4 +48,63 @@ header .contenedor {
 section {
     width: 100%;
     margin-bottom: 25px;
+}
+#resultByType {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#resultByType img{
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.type #nameElement {
+    margin-left: 30px;
+    text-align: center;
+}
+
+#resultByTypeSort {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#resultByTypeSort img{
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.parrafo {
+    float: right;
+    width: 452px;
+    height: 184px;
+    left: 517px;
+    top: 509px;
+    
+    background: rgba(52, 246, 188, 0.25);
+    border: 2px solid #0F9D58;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+#imgImput{
+    position: -webkit-sticky;
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
