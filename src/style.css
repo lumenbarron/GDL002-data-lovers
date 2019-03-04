@@ -31,13 +31,14 @@ header {
 width: 90%;
 margin: auto;
 }
-h1 {
-    float: left;
-    color: yellow;
-}
+
 h2 {
     float: left;
     color: palevioletred;
+}
+h3 {
+    float: left;
+    color:turquoise;
 }
 
 header .contenedor {
@@ -86,7 +87,7 @@ section {
 }
 
 .parrafo {
-    position: float;
+    float: right;
     width: 452px;
     height: 184px;
     left: 517px;
@@ -96,4 +97,14 @@ section {
     border: 2px solid #0F9D58;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
+
+#imgImput{
+    position: -webkit-sticky;
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
