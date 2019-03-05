@@ -43,8 +43,6 @@ const averagePokemonCandy = (data) => {
 };
 
 
-
-
 window.dataLovers = {
    searchNamePokemon: searchNamePokemon,
    typePokemonName: typePokemonName ,

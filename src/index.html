@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
@@ -9,7 +9,7 @@
     <header> 
       <div class="contenedor">
           <input type="checkbox" id="menu-bar">
-            <label for="menu-bar"> <img src="images/smartphone.png"></label>
+            <label for="menu-bar"> <img src="images/smartphone.png" alt="smarthphone"></label>
               <nav class="menu" >
                 <ul>
                   <li><a href="#description">¿Que es un pokemon?</a></li>
@@ -20,7 +20,7 @@
               </nav>
               <form class="searchform cf">
                 <input type="text" id="inputNamePokemon" value ="" placeholder="Name Pokemón...">
-                <button type="button" id ="searchName"><a href="#searchName" >Search </a></button>
+                <a href="#searchName" ><button type="button" id ="searchName">Search </button></a>
               </form>
               <h2 id="Intro">¡Hola! Estos son los tipos de Pokemon que hay, escoge uno para conocer cuales son!</h2>
               <button type="button" id ="average"><a href="#sabiasQue"><img src="images/gotcha2.png"></a></button>
@@ -34,7 +34,7 @@
       <section id="categories" >
         <div class="contenedor" id="inicio" name ="inicio">
            
-              <button type="submit" id = "filterhByTypeGrass" ><a href="#resultByType"><img src="images/bullbasaur.png" alt="GrassCategory"><p id:>Grass</p></a></button>
+              <button type="submit" id = "filterhByTypeGrass" ><a href="#resultByType"><img src="images/bullbasaur.png" alt="GrassCategory"><p>Grass</p></a></button>
               <button type="submit" id = "filterhByTypePoison" ><a href="#resultByType"><img src="images/venonat.png" alt="PoisonCategory"><p id:>Poison</p></a></button>
               <button type="submit" id = "filterhByTypeFire" ><a href="#resultByType"><img src="images/charmander.png" alt="FireCategory"><p id:>Fire</p></a></button>
               <button type="submit" id = "filterhByTypeFlying" ><a href="#resultByType"><img src="images/pidgey.png" alt="FliyingCategory"><p id:>Flying</p></a></button>
@@ -52,7 +52,7 @@
         </div>
       </section>
     </main>
-      <section class="contenedor" id = "description">
+      <section class="contenedor" id = "description" style="display:none">
         <a name="description">  
           <h3>¿Que es un pokemon?</h3>  
           <p> Los Pokémon es una especie mas de animal que existe en el universo. 
@@ -78,7 +78,7 @@
     <section name="resultByType" >
       <h2> Resultados por tipo: </h2>
         <div class="contenedor" id = "resultByType" ></div> 
-        <button type="button" id = "back"><a href="#inicio" > Back </a></button>
+        <button type="button" id = "back1"><a href="#inicio" > Back </a></button>
         <button type="button" id = "orderPokemon"><a href="#resultByTypeOrder" > Ordenar </a></button>
     </section>
 
@@ -86,7 +86,7 @@
      <section name="resultByTypeOrder">
       <h2> Resultados por tipo ordenados : </h2>
         <div class="contenedor" id = "resultByTypeSort"></div> 
-        <button type="button" id = "back"> <a href="#inicio" > Back </a></button>
+        <button type="button" id = "back2"> <a href="#inicio" > Back </a></button>
     </section>
 
     <section name ="searchName">
@@ -96,7 +96,7 @@
         </div> 
     </section>
     <img id="imgImput" src=" ">
-    <button type="button" id = "back"><a href="#inicio" > Back </a></button>
+    <button type="button" id = "back3"><a href="#inicio" > Back </a></button>
     
     <section name ="sabiasQue">
       <h2> ¿Sabias que... </h2>
