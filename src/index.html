@@ -29,8 +29,8 @@
     <main>
       <section id="categories" name ="inicio">
         <div class="contenedor" >
-              <button type="submit" id = "filterhByTypeGrass" ><a href="#resultByType"><img src="images/bullbasaur.png" alt="GrassCategory"><p>Grass</p></a></button>
-              <button type="submit" id = "filterhByTypePoison" ><a href="#resultByType"><img src="images/venonat.png" alt="PoisonCategory"><p>Poison</p></a></button>
+              <button type="submit" id = "filterhByTypeGrass" ><figure><img src="images/bullbasaur.png" alt="GrassCategory"><p>Grass</p></figure></button>
+              <button type="submit" id = "filterhByTypePoison" ><figure></figure><img src="images/venonat.png" alt="PoisonCategory"><p>Poison</p></figure></button>
               <button type="submit" id = "filterhByTypeFire" ><a href="#resultByType"><img src="images/charmander.png" alt="FireCategory"><p>Fire</p></a></button>
               <button type="submit" id = "filterhByTypeFlying" ><a href="#resultByType"><img src="images/pidgey.png" alt="FliyingCategory"><p>Flying</p></a></button>
               <button type="submit" id = "filterhByTypeWater" ><a href="#resultByType"><img src="images/squirtle.png" alt="WaterCategory"><p>Water</p></a></button>
@@ -48,8 +48,8 @@
       </section>
     </main>
 
-    <section class="contenedor" id = "description" style="display:none">
-        <a name="description">  
+    <section class="contenedor, sectionUnder" id = "description" style="display:none">
+        <a >  
           <h3>¿Que es un pokemon?</h3>  
           <p class="parraf"> Los Pokémon es una especie mas de animal que existe en el universo. 
               Pueden habitar en la tierra, otros mundos u otras dimensiones.
@@ -62,39 +62,39 @@
             </p>
           </a>
     
-        <a name="howToUse">    
+        <a>    
           <h3> ¿Como usar Pokemon Begginers? </h3>
             <p class="parraf"> Para comenzar a usar Pokemón Be.girl.ness solo secciona una categoria para 
                 ver los pokemons de un tipo, o busca en la barra de busqueda por nombre, 
                 ahi te indicará cual es su tipo, peso, altura y debilidades. 
             </p>
         </a>
+        <button type="button" id ="back">Volver</button>
     </section>
     
-    <section name="resultByType" >
+    <section class="sectionUnder" id="pageResultByType" style="display:none">
       <h2> Resultados por tipo: </h2>
         <div class="contenedor" id = "resultByType" ></div> 
-        <button type="button" id = "back1">Back  </button>
         <button type="button" id = "orderPokemon">Ordenar</button>
     </section>
 
 
-     <section name="resultByTypeOrder" >
-      <h2> Resultados por tipo ordenados : </h2>
-        <div class="contenedor" id = "resultByTypeSort"></div> 
-        <button type="button" id = "back2"> Back</button>
+     <section class="sectionUnder" id="pageResultByTypeSort" style="display:none">
+        <h2> Resultados por tipo ordenados : </h2>
+      <div class="contenedor" id = "resultByTypeSort"></div>
+        <button type="button" id = "back2"> Volver</button>
     </section>
 
-    <section name ="searchName" >
+    <section class="sectionUnder" id ="searchName" >
       <h2> Resultado de busqueda por nombre </h2>
         <div  class="contenedor"id = "searchPokemon" ></div> 
         <button type="button" id = "back3">Back</button>
     </section>
     
-    <section name ="sabiasQue" style="display:none">
+    <section id ="sabiasQue" style="display:none">
       <h2> ¿Sabias que... </h2>
         <div class="contenedor"  id ="averageresult"  >
-        <button type="button" id = "back"> Back </button>
+        <button type="button" id = "back4"> Back </button>
         </div> 
     </section >
     

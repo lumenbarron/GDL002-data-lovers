@@ -115,7 +115,7 @@ section {
     border-radius: 15px;
 } */
 
-#description{
+.sectionUnder {
     position: absolute;
     left: 10px;
     top: 300px;

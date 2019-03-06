@@ -67,11 +67,30 @@ const pagDescription =() => {
   };
 document.getElementById("WhatIs").addEventListener("click", pagDescription);
 
-const pagDescifrar =() => {
-    document.getElementById("categories").style.display = "none";
-    document.getElementById("description").style.display = "block";
+const pagInitial =() => {
+    document.getElementById("categories").style.display = "block";
+    document.getElementById("description").style.display = "none";
+    document.getElementById("pageResultByType").style.display = "none";
+    document.getElementById("pageResultByTypeSort").style.display = "none";
   };
-document.getElementById("WhatIs").addEventListener("click", pagDescifrar);
+document.getElementById("back").addEventListener("click", pagInitial);
+document.getElementById("back2").addEventListener("click", pagInitial);
+
+const pagResultType =() => {
+    document.getElementById("categories").style.display = "none";
+    document.getElementById("pageResultByType").style.display = "block";
+    document.getElementById("pageResultByTypeSort").style.display = "block";
+};
+document.getElementById("filterhByTypeGrass").addEventListener("click", pagResultType);
+document.getElementById("orderPokemon").addEventListener("click", pagResultType);
+
+const pagResultSearch =() => {
+    document.getElementById("categories").style.display = "none";
+    document.getElementById("pageResultByType").style.display = "none";
+    document.getElementById("pageResultByTypeSort").style.display = "none";
+    document.getElementById("searchName").style.display = "block";
+};
+document.getElementById("searchName").addEventListener("click",pagResultSearch);
 
 
 document.getElementById("filterhByTypeGrass").addEventListener("click", function () { typePokemonPrint ("Grass"); });
