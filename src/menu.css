@@ -9,7 +9,6 @@ header label {
     padding: 10 px;
     font-size: 28px;
     margin: 6px 0;
-    cursor: pointer;
     position: absolute;
     left: 10px;
     top: 180px;
@@ -32,6 +31,7 @@ header label {
     border-right: 1px solid #fff ;
     color: rgb(136, 136, 136);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .menu li:hover {

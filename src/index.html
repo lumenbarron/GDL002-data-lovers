@@ -2,20 +2,19 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Pokemon Begirlners</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header> 
-      <div class="contenedor">
+      <section class="contenedor">
           <input type="checkbox" id="menu-bar">
             <label for="menu-bar"> <img src="images/smartphone.png" alt="smarthphone"></label>
               <nav class="menu" >
                 <ul>
-                  <li><a href="#description">¿Que es un pokemon?</a></li>
-                  <li><a href="#comoUsar">¿Como usar Pokemon Begginers?</a></li>
+                  <li><a id="WhatIs">¿Que es un pokemon?</a></li>
+                  <li><a >¿Como usar Pokemon Begginers?</a></li>
                   <li><a href="https://pokemongolive.com/es/" target="_blank">Conoce mas...</a></li>
-              
                 </ul>
               </nav>
               <form class="searchform cf">
@@ -24,38 +23,35 @@
               </form>
               <h2 id="Intro">¡Hola! Estos son los tipos de Pokemon que hay, escoge uno para conocer cuales son!</h2>
               <button type="button" id ="average"><a href="#sabiasQue"><img src="images/gotcha2.png"></a></button>
-          </div>
+          </section>
     </header>
-    <section>
-      
-    </section>
-    
+  
     <main>
-      <section id="categories" >
-        <div class="contenedor" id="inicio" name ="inicio">
-           
+      <section id="categories" name ="inicio">
+        <div class="contenedor" >
               <button type="submit" id = "filterhByTypeGrass" ><a href="#resultByType"><img src="images/bullbasaur.png" alt="GrassCategory"><p>Grass</p></a></button>
-              <button type="submit" id = "filterhByTypePoison" ><a href="#resultByType"><img src="images/venonat.png" alt="PoisonCategory"><p id:>Poison</p></a></button>
-              <button type="submit" id = "filterhByTypeFire" ><a href="#resultByType"><img src="images/charmander.png" alt="FireCategory"><p id:>Fire</p></a></button>
-              <button type="submit" id = "filterhByTypeFlying" ><a href="#resultByType"><img src="images/pidgey.png" alt="FliyingCategory"><p id:>Flying</p></a></button>
-              <button type="submit" id = "filterhByTypeWater" ><a href="#resultByType"><img src="images/squirtle.png" alt="WaterCategory"><p id:>Water</p></a></button>
-              <button type="submit" id = "filterhByTypeBug" ><a href="#resultByType"><img src="images/caterpie.png" alt="BugCategory"><p id:>Bug</p></a></button>
-              <button type="submit" id = "filterhByTypeNormal" ><a href="#resultByType"><img src="images/jigglypuff.png" alt="NormalCategory"><p id:>Normal</p></a></button>
-              <button type="submit" id = "filterhByTypeElectic" ><a href="#resultByType"><img src="images/pikachu-2.png" alt="ElectricCategory"><p id:>Electric</p></a></button>
-              <button type="submit" id = "filterhByTypeGround" ><a href="#resultByType"><img src="images/weedle.png" alt="GroundCategory"><p id:>Ground</p></a></button>
-              <button type="submit" id = "filterhByTypeFighting" ><a href="#resultByType"><img src="images/mankey.png" alt="FightingCategory"><p id:>Fighting</p></a></button>
-              <button type="submit" id = "filterhByTypePsychic" ><a href="#resultByType"><img src="images/abra.png" alt="PsychicCategory"><p id:>Psychic</p></a></button>
-              <button type="submit" id = "filterhByTypeRock" ><a href="#resultByType"><img src="images/snorlax.png" alt="RockCategory"><p id:>Rock</p></a></button>
-              <button type="submit" id = "filterhByTypeIce" ><a href="#resultByType"><img src="images/mew.png" alt="IceCategory"><p id:>Ice</p></a></button>
-              <button type="submit" id = "filterhByTypeGhost" ><a href="#resultByType"><img src="images/zubat.png" alt="GhostCategory"><p id:>Ghost</p></a></button>
-              <button type="submit" id = "filterhByTypeDragon" ><a href="#resultByType"><img src="images/dratini.png" alt="DragonCategory"><p id:>Dragon</p></a></button>
+              <button type="submit" id = "filterhByTypePoison" ><a href="#resultByType"><img src="images/venonat.png" alt="PoisonCategory"><p>Poison</p></a></button>
+              <button type="submit" id = "filterhByTypeFire" ><a href="#resultByType"><img src="images/charmander.png" alt="FireCategory"><p>Fire</p></a></button>
+              <button type="submit" id = "filterhByTypeFlying" ><a href="#resultByType"><img src="images/pidgey.png" alt="FliyingCategory"><p>Flying</p></a></button>
+              <button type="submit" id = "filterhByTypeWater" ><a href="#resultByType"><img src="images/squirtle.png" alt="WaterCategory"><p>Water</p></a></button>
+              <button type="submit" id = "filterhByTypeBug" ><a href="#resultByType"><img src="images/caterpie.png" alt="BugCategory"><p>Bug</p></a></button>
+              <button type="submit" id = "filterhByTypeNormal" ><a href="#resultByType"><img src="images/jigglypuff.png" alt="NormalCategory"><p>Normal</p></a></button>
+              <button type="submit" id = "filterhByTypeElectic" ><a href="#resultByType"><img src="images/pikachu-2.png" alt="ElectricCategory"><p>Electric</p></a></button>
+              <button type="submit" id = "filterhByTypeGround" ><a href="#resultByType"><img src="images/weedle.png" alt="GroundCategory"><p>Ground</p></a></button>
+              <button type="submit" id = "filterhByTypeFighting" ><a href="#resultByType"><img src="images/mankey.png" alt="FightingCategory"><p>Fighting</p></a></button>
+              <button type="submit" id = "filterhByTypePsychic" ><a href="#resultByType"><img src="images/abra.png" alt="PsychicCategory"><p>Psychic</p></a></button>
+              <button type="submit" id = "filterhByTypeRock" ><a href="#resultByType"><img src="images/snorlax.png" alt="RockCategory"><p>Rock</p></a></button>
+              <button type="submit" id = "filterhByTypeIce" ><a href="#resultByType"><img src="images/mew.png" alt="IceCategory"><p>Ice</p></a></button>
+              <button type="submit" id = "filterhByTypeGhost" ><a href="#resultByType"><img src="images/zubat.png" alt="GhostCategory"><p>Ghost</p></a></button>
+              <button type="submit" id = "filterhByTypeDragon" ><a href="#resultByType"><img src="images/dratini.png" alt="DragonCategory"><p>Dragon</p></a></button>
         </div>
       </section>
     </main>
-      <section class="contenedor" id = "description" style="display:none">
+
+    <section class="contenedor" id = "description" style="display:none">
         <a name="description">  
           <h3>¿Que es un pokemon?</h3>  
-          <p> Los Pokémon es una especie mas de animal que existe en el universo. 
+          <p class="parraf"> Los Pokémon es una especie mas de animal que existe en el universo. 
               Pueden habitar en la tierra, otros mundos u otras dimensiones.
               Igual que en el mundo real tenemos las clasificaciones taxonómicas para
               identificar especies y familias animales, dentro del universo pokémon es 
@@ -66,43 +62,39 @@
             </p>
           </a>
     
-          <a name="comoUsar">    
-            <h3> ¿Como usar Pokemon Begginers? </h3>
-              <p> Para comenzar a usar Pokemón Be.girl.ness solo secciona una categoria para 
+        <a name="howToUse">    
+          <h3> ¿Como usar Pokemon Begginers? </h3>
+            <p class="parraf"> Para comenzar a usar Pokemón Be.girl.ness solo secciona una categoria para 
                 ver los pokemons de un tipo, o busca en la barra de busqueda por nombre, 
                 ahi te indicará cual es su tipo, peso, altura y debilidades. 
-                 </p>
-                </a>
+            </p>
+        </a>
     </section>
-
+    
     <section name="resultByType" >
       <h2> Resultados por tipo: </h2>
         <div class="contenedor" id = "resultByType" ></div> 
-        <button type="button" id = "back1"><a href="#inicio" > Back </a></button>
-        <button type="button" id = "orderPokemon"><a href="#resultByTypeOrder" > Ordenar </a></button>
+        <button type="button" id = "back1">Back  </button>
+        <button type="button" id = "orderPokemon">Ordenar</button>
     </section>
 
 
-     <section name="resultByTypeOrder">
+     <section name="resultByTypeOrder" >
       <h2> Resultados por tipo ordenados : </h2>
         <div class="contenedor" id = "resultByTypeSort"></div> 
-        <button type="button" id = "back2"> <a href="#inicio" > Back </a></button>
+        <button type="button" id = "back2"> Back</button>
     </section>
 
-    <section name ="searchName">
+    <section name ="searchName" >
       <h2> Resultado de busqueda por nombre </h2>
-        <div id = "searchPokemon" >
-        <p class="parrafo" id = "searchResult"> </p>
-        </div> 
+        <div  class="contenedor"id = "searchPokemon" ></div> 
+        <button type="button" id = "back3">Back</button>
     </section>
-    <img id="imgImput" src=" ">
-    <button type="button" id = "back3"><a href="#inicio" > Back </a></button>
     
-    <section name ="sabiasQue">
+    <section name ="sabiasQue" style="display:none">
       <h2> ¿Sabias que... </h2>
         <div class="contenedor"  id ="averageresult"  >
-        <p></p>
-        <button type="button" id = "back"><a href="#inicio" > Back </a></button>
+        <button type="button" id = "back"> Back </button>
         </div> 
     </section >
     

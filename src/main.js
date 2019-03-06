@@ -1,12 +1,16 @@
+
 //----------For print pokemon´s search ---------------------//
 const searchResult = () =>{
-    let nameInput = document.getElementById("inputNamePokemon").value.toLowerCase(); 
+    let nameInput = document.getElementById("inputNamePokemon").value.toLowerCase();
     let pokemonImput = dataLovers.searchNamePokemon(nameInput, POKEMON.pokemon);
-    document.getElementById("searchResult").innerHTML = "Hola! Mi nombre es "
-    + pokemonImput.name + ", soy un pokemon tipo " + pokemonImput.type 
-    + "; mi peso es " + pokemonImput.weight + " y mido " + pokemonImput.height + 
-    ". Mi principal debilidad son pokemones de tipo " + pokemonImput.weaknesses + ". ¡Es un gusto conocerte!";
-    document.getElementById("imgImput").src = pokemonImput.img;
+    const markup = `
+        <p class="parraf"> "Hola! Mi nombre es ${pokemonImput.name}, soy un pokemon tipo ${pokemonImput.type};
+         mi peso es ${pokemonImput.weight} y mido ${pokemonImput.height}. Mi principal debilidad son pokemones de tipo 
+        ${pokemonImput.weaknesses}. ¡Es un gusto conocerte!"
+        </p>
+        <img id="imageElement" src="${pokemonImput.img}">
+         `;
+    document.getElementById("searchPokemon").innerHTML = markup;
 };
 
 document.getElementById("searchName").addEventListener("click", searchResult);
@@ -56,6 +60,19 @@ document.getElementById("average").addEventListener("click",printAverage);
 
 
 //----------Elements for the HTML---------------------//
+
+const pagDescription =() => {
+    document.getElementById("categories").style.display = "none";
+    document.getElementById("description").style.display = "block";
+  };
+document.getElementById("WhatIs").addEventListener("click", pagDescription);
+
+const pagDescifrar =() => {
+    document.getElementById("categories").style.display = "none";
+    document.getElementById("description").style.display = "block";
+  };
+document.getElementById("WhatIs").addEventListener("click", pagDescifrar);
+
 
 document.getElementById("filterhByTypeGrass").addEventListener("click", function () { typePokemonPrint ("Grass"); });
 document.getElementById("filterhByTypeWater").addEventListener("click", function () { typePokemonPrint ("Water"); });

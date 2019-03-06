@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Rokkitt');
-@import url("fontello.css");
 @import url("menu.css");
-@import url("banner.css");
 @import url("categories.css");
 @import url("search.css");
-/*<link rel="stylesheet" href="fontello.css">*/
+
 
 *{
     margin: 0;
@@ -86,7 +84,7 @@ section {
     border-radius: 15px;
 }
 
-.parrafo {
+/* .parrafo {
     float: right;
     width: 452px;
     height: 184px;
@@ -97,9 +95,17 @@ section {
     border: 2px solid #0F9D58;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+} */
+#searchPokemon img{
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
 
-#imgImput{
+/* #imgImput{
     position: -webkit-sticky;
     width: 150px;
     height:150px;
@@ -107,4 +113,10 @@ section {
     border: 1px solid turquoise;
     box-sizing: border-box;
     border-radius: 15px;
+} */
+
+#description{
+    position: absolute;
+    left: 10px;
+    top: 300px;
 }
