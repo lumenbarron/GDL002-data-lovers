@@ -122,6 +122,7 @@ const pagResultSearch =() => {
     document.getElementById("categories").style.display = "none";
     document.getElementById("pageResultByType").style.display = "none";
     document.getElementById("pageResultByTypeSort").style.display = "none";
+    document.getElementById("description").style.display = "none";
     document.getElementById("searcResulthName").style.display = "block";
 };
 document.getElementById("searchName").addEventListener("click",pagResultSearch);
