@@ -49,3 +49,4 @@ window.dataLovers = {
    orderPokemonAlfb: orderPokemonAlfb,
    averagePokemonCandy: averagePokemonCandy
 };
+

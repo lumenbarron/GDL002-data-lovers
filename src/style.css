@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Rokkitt');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Questrial');
 @import url("menu.css");
 @import url("categories.css");
+@import url("resutByTipe.css");
+@import url("description.css");
 @import url("search.css");
 
 
@@ -12,111 +14,73 @@
 
 
 body{
-    font-family:'Rokkitt', serif;
+    background: linear-gradient(to bottom, white,rgb(255, 171, 180));
+    background-repeat: no-repeat;
+    font-family:'Montserrat Alternates', sans-serif;
 }
+
 header {
     width: 100%;
     height: 160px;
     background-image: url(images/banner3.jpg);
-    color: #fff;
     position: absolute;
     top: 0%;
     left: 0;
     align-content: center;
     z-index: 100;
 }
-.contenedor {
-width: 90%;
-margin: auto;
-}
-
-h2 {
-    float: left;
-    color: palevioletred;
-}
-h3 {
-    float: left;
-    color:turquoise;
-}
 
 header .contenedor {
     display: table;
+}
+
+.contenedor {
+width: 90%;
+margin: auto;
 
 }
+
+h2 {
+    font-family:'Questrial', sans-serif;
+    float: unset;
+    color: rgb(255, 61, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h3 {
+    font-family:'Questrial', sans-serif;
+    color:rgb(0, 151, 156);
+}
+
 section {
     width: 100%;
+    margin-top: 260px;
     margin-bottom: 25px;
 }
-#resultByType {
-    margin-top: 110px;
+
+.buttonAction{
+    /* display: inline-block; */
+    text-decoration: none;
+    font-family:'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+    color: rgba(15, 157, 88);
+    cursor: pointer;
+    background: linear-gradient(to top,rgb(255, 171, 180), rgba(15, 157, 88, 0.384));
+    border: 1px solid #0F9D58;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    margin: auto;
+    transition: 0.3s;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-#resultByType img{
-    width: 150px;
-    height:150px;
-    margin:7px;
-    border: 1px solid turquoise;
-    box-sizing: border-box;
-    border-radius: 15px;
-}
-
-.type #nameElement {
-    margin-left: 30px;
     text-align: center;
 }
 
-#resultByTypeSort {
-    margin-top: 110px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+.buttonAction:hover{
+    background: rgba(158, 158, 158, 0.3);
 
-#resultByTypeSort img{
-    width: 150px;
-    height:150px;
-    margin:7px;
-    border: 1px solid turquoise;
-    box-sizing: border-box;
-    border-radius: 15px;
-}
-
-/* .parrafo {
-    float: right;
-    width: 452px;
-    height: 184px;
-    left: 517px;
-    top: 509px;
-    
-    background: rgba(52, 246, 188, 0.25);
-    border: 2px solid #0F9D58;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-} */
-#searchPokemon img{
-    width: 150px;
-    height:150px;
-    margin:7px;
-    border: 1px solid turquoise;
-    box-sizing: border-box;
-    border-radius: 15px;
-}
-
-/* #imgImput{
-    position: -webkit-sticky;
-    width: 150px;
-    height:150px;
-    margin:7px;
-    border: 1px solid turquoise;
-    box-sizing: border-box;
-    border-radius: 15px;
-} */
-
-.sectionUnder {
-    position: absolute;
-    left: 10px;
-    top: 300px;
 }

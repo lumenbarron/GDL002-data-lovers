@@ -4,11 +4,11 @@ const searchResult = () =>{
     let nameInput = document.getElementById("inputNamePokemon").value.toLowerCase();
     let pokemonImput = dataLovers.searchNamePokemon(nameInput, POKEMON.pokemon);
     const markup = `
-        <p class="parraf"> "Hola! Mi nombre es ${pokemonImput.name}, soy un pokemon tipo ${pokemonImput.type};
+        <img id="imageElement" src="${pokemonImput.img}">
+        <p > "Hola! Mi nombre es ${pokemonImput.name}, soy un pokemon tipo ${pokemonImput.type};
          mi peso es ${pokemonImput.weight} y mido ${pokemonImput.height}. Mi principal debilidad son pokemones de tipo 
         ${pokemonImput.weaknesses}. ¡Es un gusto conocerte!"
         </p>
-        <img id="imageElement" src="${pokemonImput.img}">
          `;
     document.getElementById("searchPokemon").innerHTML = markup;
 };
@@ -19,6 +19,7 @@ document.getElementById("searchName").addEventListener("click", searchResult);
 
 let resultTypePokemonPrint;
 const typePokemonPrint = (nameTypeClass) => {
+    document.getElementById("resultByType").innerHTML = " ";
    resultTypePokemonPrint = dataLovers.typePokemonName( nameTypeClass ,POKEMON.pokemon);
     resultTypePokemonPrint.map(element => { element;
         const markup = `
@@ -52,6 +53,7 @@ document.getElementById("filterhByTypeElectic").addEventListener("click", functi
  
 //----------For print pokemon´s sort for the type ---------------------//
 const sortPokemonPrint = () => {
+    document.getElementById("resultByTypeSort").innerHTML = " ";
     let resultSortPokemonPrint = dataLovers.orderPokemonAlfb(resultTypePokemonPrint );
     resultSortPokemonPrint.map(element => { element;
         const markup = `
@@ -80,6 +82,9 @@ document.getElementById("average").addEventListener("click",printAverage);
 
 const pagDescription =() => {
     document.getElementById("categories").style.display = "none";
+    document.getElementById("pageResultByType").style.display = "none";
+    document.getElementById("pageResultByTypeSort").style.display = "none";
+    document.getElementById("searcResulthName").style.display = "none";
     document.getElementById("description").style.display = "block";
   };
 document.getElementById("WhatIs").addEventListener("click", pagDescription);

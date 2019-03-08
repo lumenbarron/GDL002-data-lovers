@@ -1,0 +1,74 @@
+#resultByType {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#resultByType img{
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1.5px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.type #nameElement {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#resultByTypeSort {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#resultByTypeSort img{
+    width: 150px;
+    height:150px;
+    margin:7px;
+    border: 1.5px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+#searchPokemon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 40vh;
+}
+
+#searchPokemon img{
+    width: 180px;
+    height:180px;
+    border: 1.5px solid turquoise;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    /* position: absolute;
+    left: 40px; */
+}
+
+#searchPokemon  p{
+    margin: auto;
+    height: 70px;
+    width: 700px;
+    display: flex;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(15, 157, 88, 0.384));
+    border: 1px solid #0F9D58;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    /* margin-left: 220px; */
+}
+
+#back3{
+    margin-top: 30px;
+}

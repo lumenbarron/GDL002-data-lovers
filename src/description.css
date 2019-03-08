@@ -1,0 +1,38 @@
+#description {
+    display: grid;
+    background: none;
+    margin-top: 260px;
+    height: 56vh;
+    flex-wrap: wrap;
+    overflow: auto;
+    grid-template-columns: 1fr 30vw 30vw 30vw 1fr;
+    grid-template-rows: 1fr 10px 20px 5px 1fr 5px 20px 5px 1fr 5px 1fr;
+    grid-template-areas: 
+    "header header header header header"
+    ". . . . ."
+    ". text text text ."
+    ". . . . ."
+    ". parraf parraf parraf ."
+    ". . . . ."
+    ". text2 text2 text2 ."
+    ". . . . ."
+    ". parraf2 parraf2 parraf2 ."
+    ". . . . ."
+    "footer footer footer footer footer";
+}
+
+#description h3{
+    display: flex;
+    justify-content: center;
+}
+
+#description  p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(15, 157, 88, 0.384));
+    border: 1px solid #0F9D58;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+
+}
