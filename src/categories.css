@@ -1,8 +1,8 @@
 #categories .contenedor {
-    /* margin-top: 260px; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #categories img {
@@ -29,4 +29,15 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width:768px) { 
+    #categories img {
+        width: 100px;
+        height:100px;
+        margin:10px;
+    }
+    #categories .contenedor {
+        padding:10px;
+    }
 }

@@ -3,6 +3,7 @@
 @import url("categories.css");
 @import url("resutByTipe.css");
 @import url("description.css");
+@import url("responsive.css");
 @import url("search.css");
 
 
@@ -35,8 +36,8 @@ header .contenedor {
 }
 
 .contenedor {
-width: 90%;
-margin: auto;
+    width: 90%;
+    margin: auto;
 
 }
 
@@ -83,4 +84,11 @@ section {
 .buttonAction:hover{
     background: rgba(158, 158, 158, 0.3);
 
+}
+
+@media only screen and (max-width:768px) { 
+    h2 {
+        font-size: 20px;
+        padding: 1px;
+    }
 }

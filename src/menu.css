@@ -34,10 +34,6 @@ header label {
     cursor: pointer;
 }
 
-/* .menu li a:hover {
-    background: rgba(158, 158, 158, 0.3);
-} */
-
 #average {
     position: absolute;
     right: 19px;
@@ -47,19 +43,11 @@ header label {
     cursor: pointer;
 }
 
-/* #Intro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */
-
 @media only screen and (max-width:768px) {
     header label {
         display: block;
     }
-    .contenedor h2{
-        position: relative;
+    #Intro{
         margin: auto;
         left:80px;
         right: 150px;
