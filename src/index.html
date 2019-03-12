@@ -22,7 +22,7 @@
                 <input type="text" id="inputNamePokemon" value ="" placeholder="Nombre de Pokemón...">
                 <a href="#searchName" ><button type="button" id ="searchName">Buscar </button></a>
               </form>
-              <button type="button" id ="average"><a href="#sabiasQue"><img src="images/gotcha2.png"></a></button>
+              <button type="button" class="buttonImages" id ="average"><img src="images/gotcha2.png"></button>
           </section>
     </header>
   
@@ -67,34 +67,35 @@
                 ver los pokemons de un tipo, o busca en la barra de busqueda por nombre, 
                 ahi te indicará cual es su tipo, peso, altura y debilidades. 
             </p>
-        <button type="button" class="buttonAction" id ="back">Volver</button>
+        <button type="button" class="buttonImages" id ="back"><img src="images/gotcha.png"></button>
+        <!-- <button type="button" class="buttonAction" id ="back">Volver</button> -->
     </section>
     
     <section class="sectionUnder" id="pageResultByType" style="display:none">
-      <h2> Resultados por tipo: </h2>
+      <h2> Resultados por tipo </h2>
         <div class="contenedor" id = "resultByType" ></div> 
-        <button type="button" class="buttonAction" id = "orderPokemon">Ordenar</button>
+        <button type="button" class="buttonImages" id ="back4"><img src="images/gotcha.png"></button>
+        <button type="button" class="buttonAction" id = "orderPokemon">Ordenar A-Z</button>
     </section>
 
 
      <section class="sectionUnder" id="pageResultByTypeSort" style="display:none">
         <h2> Resultados por tipo ordenados : </h2>
       <div class="contenedor" id = "resultByTypeSort"></div>
-        <button type="button" class="buttonAction" id = "back2"> Volver</button>
+      <button type="button" class="buttonImages" id ="back2"><img src="images/gotcha.png"></button>
+      <!-- <button type="button" class="buttonAction" id = "back2"> Volver</button> -->
     </section>
 
     <section class="sectionUnder" id ="searcResulthName" style="display:none">
       <h2> Resultado de busqueda por nombre </h2>
         <div  class="contenedor"id = "searchPokemon" ></div> 
-        <button type="button" class="buttonAction" id = "back3">Volver</button>
+        <button type="button" class="buttonImages" id ="back3"><img src="images/gotcha.png"></button>
+        <!-- <button type="button" class="buttonAction" id = "back3">Volver</button> -->
     </section>
     
-    <section id ="sabiasQue" style="display:none">
-      <h2> ¿Sabias que... </h2>
-        <div class="contenedor"  id ="averageresult">
-        <button type="button" class="buttonAction" id = "back4"> Back </button>
-        </div> 
-    </section >
+    <div >
+        <p  id ="averageresult" style="display:none">  </p>
+    </div >
     
 <footer>
     <div class="contenedor">

@@ -5,7 +5,7 @@ const searchNamePokemon = (nameInput, data)=> {
     data.find( obj => { 
       if (obj.name.toLowerCase() === nameInput.toLowerCase()){
      namePokemon = (obj); 
-    }
+    } 
   });
   return namePokemon;
   };
@@ -36,6 +36,7 @@ const averagePokemonCandy = (data) => {
   let allPokemon = data
   .filter(obj => obj.candy_count)
   .map( obj => obj.candy_count);
+  console.log(allPokemon);
   let reducePokemon = allPokemon.reduce ((accumulator, currentValue) => accumulator + currentValue);
   let average = reducePokemon/allPokemon.length;
  console.log(typeof(average));

@@ -13,6 +13,11 @@ const searchResult = () =>{
     document.getElementById("searchPokemon").innerHTML = markup;
 };
 
+// const notFoundSearch = () =>{
+//     document.createElement("p").innerHTML="El pokemon que buscas no esta disponible o no existe, por favor intenta de nuevo"
+// }
+
+
 document.getElementById("searchName").addEventListener("click", searchResult);
 
 //----------For print type pokemon selection ---------------------//
@@ -86,6 +91,7 @@ const pagDescription =() => {
     document.getElementById("pageResultByTypeSort").style.display = "none";
     document.getElementById("searcResulthName").style.display = "none";
     document.getElementById("description").style.display = "block";
+    document.getElementById("average").style.display = "none";
   };
 document.getElementById("WhatIs").addEventListener("click", pagDescription);
 document.getElementById("HowUse").addEventListener("click", pagDescription);
@@ -96,15 +102,18 @@ const pagInitial =() => {
     document.getElementById("pageResultByType").style.display = "none";
     document.getElementById("pageResultByTypeSort").style.display = "none";
     document.getElementById("searcResulthName").style.display = "none";
-  };
+    document.getElementById("average").style.display = "block";
+};
 document.getElementById("back").addEventListener("click", pagInitial);
 document.getElementById("back2").addEventListener("click", pagInitial);
 document.getElementById("back3").addEventListener("click", pagInitial);
+document.getElementById("back4").addEventListener("click", pagInitial);
 
 const pagResultType =() => {
     document.getElementById("categories").style.display = "none";
     document.getElementById("pageResultByType").style.display = "block";
     document.getElementById("pageResultByTypeSort").style.display = "none";
+    document.getElementById("average").style.display = "none";
 };
 let buttons = document.getElementsByClassName('typeButton')
 for (let i = 0; i < buttons.length; i++) {
@@ -115,6 +124,7 @@ const pagResultTypeSort =() => {
     document.getElementById("categories").style.display = "none";
     document.getElementById("pageResultByType").style.display = "none";
     document.getElementById("pageResultByTypeSort").style.display = "block";
+    document.getElementById("average").style.display = "none"
 };
 document.getElementById("orderPokemon").addEventListener("click", pagResultTypeSort);
 
@@ -124,5 +134,13 @@ const pagResultSearch =() => {
     document.getElementById("pageResultByTypeSort").style.display = "none";
     document.getElementById("description").style.display = "none";
     document.getElementById("searcResulthName").style.display = "block";
+    document.getElementById("average").style.display = "none";
 };
 document.getElementById("searchName").addEventListener("click",pagResultSearch);
+
+const viewAverage = () => {
+    const show = document.getElementById("averageresult");
+    show.style.display = (show.style.display == "block" ) ? "none" : "block";
+    
+}
+document.getElementById("average").addEventListener("click",viewAverage);

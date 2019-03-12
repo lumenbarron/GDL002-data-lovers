@@ -34,7 +34,28 @@ header label {
     cursor: pointer;
 }
 
-#average {
+/* #average{
+    position: relative;
+    left: 0;
+    right: 0;
+} */
+
+#averageresult{
+    position: absolute;
+    top: 160px;
+    right: 160px;
+    width: 160px;
+    padding:5px 5px 5px 5px;
+    font-family:'Questrial', sans-serif;
+    background:linear-gradient(to top, white, rgb(243, 159, 3));
+    color: rgb(73, 73, 73);
+    text-align: center;   
+    transition: all 0.5s;
+}
+
+
+
+.buttonImages {
     position: absolute;
     right: 19px;
     top: 160px;
@@ -72,5 +93,12 @@ header label {
     #menu-bar:checked ~ .menu {
         margin: 0;
     }
-   
+    
+    #averageresult{
+        right: 130px;
+        top: 180px;
+        transition: all 0.5s;
+        font-size: 13px;
+    }
+
 }
