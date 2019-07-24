@@ -1,13 +1,24 @@
-
+console.log('holi')
 // Searching for the name of Pokemon
 const searchNamePokemon = (nameInput, data)=> {
-  let namePokemon = "";
-    data.find( obj => { 
-      if (obj.name.toLowerCase() === nameInput.toLowerCase()){
-     namePokemon = (obj); 
-    } 
-  });
-  return namePokemon;
+ const result =  data.filter(pokemon => pokemon.name.toLowerCase() == nameInput.toLowerCase() )
+ if(result == undefined){
+   result = 'not found'
+   console.log(result)
+  } else {
+    return result[0]
+  }
+  // let namePokemon = "";
+  //   data.find( obj => { 
+    //     if (obj.name.toLowerCase() === nameInput.toLowerCase()){
+      //       console.log('si')
+      //       return namePokemon = (obj); 
+      //   } else{
+        //     return console.log('no')
+        //   }
+        // });
+        console.log(result)
+  return result[0]
   };
 
 
@@ -15,7 +26,7 @@ const searchNamePokemon = (nameInput, data)=> {
 const typePokemonName = ( nameType, data ) => {
   let typePokemon = data
     .filter( obj => obj.type[0] === nameType || obj.type[1] === nameType );
-    //console.log(JSON.stringify(typePokemon));
+    console.log(JSON.stringify(typePokemon));
     return typePokemon;
 };
 

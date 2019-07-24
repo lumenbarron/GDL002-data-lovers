@@ -1,16 +1,27 @@
 
 //----------For print pokemon´s search ---------------------//
 const searchResult = () =>{
-    let nameInput = document.getElementById("inputNamePokemon").value.toLowerCase();
+    let nameInput = document.getElementById("inputNamePokemon").value;
     let pokemonImput = dataLovers.searchNamePokemon(nameInput, POKEMON.pokemon);
-    const markup = `
+    let markup = "" 
+    console.log(typeof pokemonImput);
+    if ( typeof pokemonImput !== 'object') {
+        markup = `
+        <p > "El pokemon que buscas no esta disponible o no existe, por favor intenta de nuevo"
+        </p>
+         `;
+} else {
+    markup = `
         <img id="imageElement" src="${pokemonImput.img}">
         <p > "Hola! Mi nombre es ${pokemonImput.name}, soy un pokemon tipo ${pokemonImput.type};
          mi peso es ${pokemonImput.weight} y mido ${pokemonImput.height}. Mi principal debilidad son pokemones de tipo 
         ${pokemonImput.weaknesses}. ¡Es un gusto conocerte!"
         </p>
          `;
-    document.getElementById("searchPokemon").innerHTML = markup;
+}
+         document.getElementById("searchPokemon").innerHTML = markup;
+    
+    
 };
 
 // const notFoundSearch = () =>{
